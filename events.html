@@ -51,22 +51,49 @@
       <h3 class="h4 pb-3">Upcoming Events</h3>
 
       <!-- Add the class needed to make, A striped table, A table with borders & A different shade of colour on hover -->
-      <table class="table table-sm">
-        <!-- Record 1 Details
-              2 Sep 2023
-              12 pm, Singapore Time
-              CodeJam - Gear up for an exhilarating 48-hour coding competition. Are you up for the challenge?
-        -->
-        <!-- Record 2 Details
-              9 Sep 2023
-              8 pm, Singapore Time
-              Game Night - Time to unwind with a fun-filled night of multiplayer games. Can you beat the reigning champ?
-        -->
-        <!-- Record 3 Details
-              23 Sep 2023
-              5 pm, Singapore Time
-              Tech Company Networking - We receive a valuable opportunity to network with individual from top tech companies which will allow our members to exchange ideas, knowledge and gain insights on what to expect upon graduation!
-        -->
+      <table class="table table-sm table-striped table-bordered table-hover">
+        <thead>
+          <tr>
+            <th>Date</th>
+            <th>Time</th>
+            <th>Event</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>2 Sep 2023</td>
+            <td>12 pm, Singapore Time</td>
+            <td>
+              <p class="fw-bold">CodeJam</p>
+              <p>Gear up for an exhilarating 48-hour coding competition. Are you up for the challenge?</p>
+              <div class="text-right">
+                <button class="btn btn-success">Sign Up</button>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>9 Sep 2023</td>
+            <td>8 pm, Singapore Time</td>
+            <td>
+              <p class="fw-bold">Game Night</p>
+              <p>Time to unwind with a fun-filled night of multiplayer games. Can you beat the reigning champ?</p>
+              <div class="text-right">
+                <button class="btn btn-danger">FULL</button>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>23 Sep 2023</td>
+            <td>5 pm, Singapore Time</td>
+            <td>
+              <p class="fw-bold">Tech Company Networking</p>
+              <p>We receive a valuable opportunity to network with individual from top tech companies which will allow our members to exchange ideas, knowledge and gain insights on what to expect upon graduation!</p>
+              <div class="text-right">
+                <button class="btn btn-warning">Limited Slots</button>
+              </div>
+            </td>
+          </tr>
+        </tbody>
       </table>
 
       <!-- Create a second table for past events -->
