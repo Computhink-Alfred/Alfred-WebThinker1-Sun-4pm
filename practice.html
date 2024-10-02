@@ -12,32 +12,25 @@
     </style>
   </head>
   <body>
-    <table class="table table-primary table-hover table-striped table-bordered">
-      <thead>
-        <tr>
-          <th>Name</th>
-          <th>Age</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Alfred</td>
-          <td>
-            <p class="text-left">26</p>
-            <p class="text-right"><button>Sign Up</button></p>
-          </td>
-        </tr>
-        <tr>
-          <td>Liam</td>
-          <td>12</td>
-        </tr>
-        <tr>
-          <td>Adrian</td>
-          <td>12</td>
-        </tr>
-      </tbody>
-    </table>
-
-    <button class="btn btn-primary">Hello</button>
+    <p>This is me writing and making changes to my practice.html just to see if the auto-commit is working.</p>
+    <form>
+      <label for="userPhoneNumber">Enter Phone Number:</label>
+      <input type="number" id="userPhoneNumber" placeholder="E.g. 87654321" class="form-control">
+      <p id="phoneNumberError" class="text-danger d-none">Field cannot be left blank.</p>
+      <button type="button" class="btn btn-primary" onclick="validate()">Submit</button>
+    </form>
+    <script>
+      const validate = () => {
+        let userNumber = document.getElementById("userPhoneNumber").value.length;
+        
+        if (userNumber == 0) {
+          document.getElementById("userPhoneNumber").classList = "form-control is-invalid";
+          document.getElementById("phoneNumberError").classList = "text-danger";
+        } else {
+          document.getElementById("userPhoneNumber").classList = "form-control";
+          document.getElementById("phoneNumberError").classList = "text-danger d-none";
+        }
+      }
+    </script>
   </body>
 </html>
